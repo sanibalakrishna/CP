@@ -1,0 +1,12 @@
+{
+"cmd": ["g++.exe",
+    "-Dminterm",
+    "-O2",
+    "-std=c++17", "${file}",
+    "-o",
+    "${file_base_name}.exe",
+    "&&",
+    "${file_base_name}.exe<Input.txt>Output.txt"],
+"shell":true,
+"selector":"source.cpp"
+}
